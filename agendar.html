@@ -39,6 +39,8 @@
                  <h1>Agendar consulta<hr></h1>
             <form name="agendar">
 
+                <fieldset>
+                    <legend>Dados pessoais:</legend>
                 <label for="nome">Nome Completo: </label>
                 <input type="text" id="nome" name="nome" placeholder="Nome completo">
                 <br>
@@ -48,16 +50,48 @@
                 <br>
                 <label for="celular">Celular: </label>
                 <input type="text" id="celular" name="celular" placeholder="Celular">
+            </fieldset>
                 <br>
+                <fieldset>
+                    <legend>Data do agendamento:</legend>
                 <label for="data">Data: </label>
                 <input type="date" id="data" name="data">
                 <br>
                 <label for="horario">Horário: </label>
                 <input type="time" id="horario" name="horario">
+            </fieldset>
                 <br>
+                <br>
+            <fieldset>
+                <legend>Serviços:</legend>
+                <select name="especialidade" id="especialidade">
+                    <option value="especialidade">Especialidade</option>
+                    <option value="psicologia">Bucomaxifacial</option>
+                    <option value="odontologia">Cirúrgias</option>
+                    <option value="pediatria">Estética</option>
+                    
+                </select>
+<br><br>
+                <h4>Serviços desejados:</h4>
+
+                
+                <input type="checkbox" id="Limpeza" name="Limpeza" value="Limpeza">Limpeza<br>
+                <input type="checkbox" id="botox" name="botox" value="botox">Aplicação de BOTOX<br>
+                <input type="checkbox" id="caries" name="caries" value="caries">Remoção de cáries<br>
+                <input type="checkbox" id="canal" name="canal" value="canal">Tratamento de canal<br>
+                
+               <br>
+               <h4>Selecione o profissional:</h4>
+                <input type="radio" id="profissional" name="profissional" value="profissional">Dr. Ricardo Almeida - Cirurgião-Dentista e Implantodontista<br> 
+                <input type="radio" id="profissional" name="profissional" value="profissional">Dra. Fernanda Costa - Ortodontista<br>
+                <input type="radio" id="profissional" name="profissional" value="profissional">Dr. Marcelo Lima - Endodontista<br>
+                <input type="radio" id="profissional" name="profissional" value="profissional">Dra. Juliana Pereira - Dentista Estética<br>
+                <input type="radio" id="profissional" name="profissional" value="profissional">Dr. Thiago Rocha - Periodontista<br>
+               <br>
+               
                 <input type="submit" value="Agendar">
 
-
+            </fieldset>
             </form>
         </center>
                 
